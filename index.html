@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html manifest="offline.cache">
+<head>
+    <meta charset="UTF-8">
+    <title>ابو خيون المعدل </title>
+    <script>
+        // دالة لمنع ظهور أخطاء المتصفح
+        window.onerror = function() { return true; };
+        
+        function start() {
+            document.getElementById('status').innerHTML = "جارٍ تشغيل الثغرة... انتظر";
+            // استدعاء ملف الحمولة كأنه كود برمجي وليس ملف بيانات
+            var script = document.createElement('script');
+            script.src = 'payload.js'; 
+            document.body.appendChild(script);
+        }
+    </script>
+</head>
+<body onload="start()" style="background:#000; color:#00ff00; text-align:center;">
+    <h1 id="status">جاري التحميل...</h1>
+</body>
+</html>            
+            // هنا تضع كود الحقن الفعلي
+        }, 3000);
+    };
+</script>
+</body>
+</html>
